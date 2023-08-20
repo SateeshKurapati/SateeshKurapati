@@ -1,0 +1,73 @@
+package sample;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+	// Arithmetic operators
+		int a,b,c,d,e,f,g;
+		a=20;
+		b=10;
+		c=a+b;
+                d=a-b;
+                e=a*b;
+                f=a/b;
+                g=a%b;
+        System.out.println(c+" "+d+" "+e+" "+f+" "+g);
+
+        
+        //Unary operators
+        int x=10,y,z;
+		b=++a;
+		c=a++ + ++b;
+		System.out.println(a+" "+b+" "+c);
+
+		
+	//Bitwise operators
+		int p,q,r,s,t,u,v;
+		p=20;
+		q=10;
+		r=p&q;
+		s=p/q;
+		t=p^q;
+		u=p<<q;
+		v=p>>q;
+		System.out.println(r+" "+s+" "+t+" "+u+" "+v); 
+
+		
+	//Assignment operator
+		int h,i,j,k,l,m;
+		h=30;
+		i=h+=2;
+		j=h-=4;
+		k=h*=6;
+		l=h/=8;
+		m=h%=10;
+		System.out.println(i+" "+j+" "+k+" "+l+" "+m);
+
+      
+	//Relational operator
+		int n,o;
+		n=100;
+		o=50;
+		System.out.println(n>o);
+		System.out.println(n<o);
+		System.out.println(n==o);
+		System.out.println(n!=o);
+		System.out.println(n>=o);
+
+		
+	//Ternary operator
+		int age=18;
+		String staus=(age>=18)? "Adult" : "Minor";
+		System.out.println("String status" +staus);
+
+		
+	//Logical operator
+		int aa,bb;
+		aa=50;
+		bb=25;
+		boolean result=(aa>=bb) && (bb>=aa);
+		System.out.println("Result:" +result);
+	}
+
+}

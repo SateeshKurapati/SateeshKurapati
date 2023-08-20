@@ -1,0 +1,21 @@
+package sample;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int I,C,T,B,D;
+		B=25000;
+		D=15000;
+		T=11000;
+	    C=B+D;
+	    System.out.println(C);
+        C=C-T;
+        System.out.println(C);
+        I=C*2/100;
+        System.out.println(I);
+        C=I*12+C;
+        System.out.println(C);
+	}
+
+}

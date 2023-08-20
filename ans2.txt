@@ -1,0 +1,26 @@
+package sample;
+
+import java.util.Scanner;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+           int s;
+           double da,hra,pf,g;
+           System.out.println("enter salarty");
+           Scanner sc=new Scanner(System.in);
+           s=sc.nextInt();
+           da=s*0.12;
+           System.out.println("da" +da);
+           hra=s*0.13;
+           System.out.println("hra" +hra);
+           pf=s*0.15;
+           System.out.println("pf" +pf);
+           g=s+da+hra+pf;
+           System.out.println("g" +g);
+           
+           
+	}
+
+}
