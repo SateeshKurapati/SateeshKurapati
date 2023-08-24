@@ -1,0 +1,33 @@
+package sample;
+
+import java.util.Scanner;
+
+public class Switchcasetest2que1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter choice");
+		int ch,bill;
+		bill=20000;
+		double amount;
+		ch=sc.nextInt();
+		
+		 switch(ch)
+		 {
+		 case 1:
+			 amount=bill*0.10;
+			 break;
+		 case 2:
+			 amount=bill*0.05;
+			 break;
+		 case 3:
+			 amount=bill*0.12;
+			 break;
+			default:amount=bill*0.02;
+			 break;
+		 }
+		 System.out.println("discount is" +amount);
+			 
+	}
+}
