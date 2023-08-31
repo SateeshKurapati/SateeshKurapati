@@ -1,0 +1,31 @@
+package sample;
+
+import java.util.Scanner;
+
+public class Student3 {
+	int sid;
+	String sname;
+	int marks;
+	
+	void input()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter sid");
+		sid=sc.nextInt();
+		System.out.println("Enter sname");
+		sname=sc.next();
+		System.out.println("Enter marks");
+		marks=sc.nextInt();	
+	}
+      public void output()
+      {
+    	  System.out.println(sid+" "+sname+" "+marks);
+      }
+	public static void main(String[] args) {
+		Student3 s1=new Student3();
+		s1.input();
+		s1.output();
+
+	}
+
+}

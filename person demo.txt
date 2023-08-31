@@ -1,0 +1,46 @@
+package sample;
+class person
+{
+	int pid;
+	String pname;
+	person()
+{
+    pid=17542;
+    pname="sateesh";
+}
+}
+ class Student extends person
+ {
+	 int marks;
+	 Student()
+	 {
+		 marks=90;
+	 }
+			 void show()
+		 {
+				 System.out.println(pid+" "+pname+" "+marks);
+		 }
+ }
+ class Emp extends person
+ {
+	 int salary;
+	 Emp()
+	 {
+		 salary=50000;
+	 }
+		 void show()
+		 {
+			 System.out.println(pid+" "+pname+" "+salary);
+		 }
+	 }
+ class persondemo
+ {
+	public static void main(String[] args) {
+		Student s=new Student();
+		Emp e=new Emp();
+		s.show();
+		e.show();
+
+	}
+
+}

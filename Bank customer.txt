@@ -1,0 +1,29 @@
+package sample;
+
+public class Bankcustomer {
+	int acno;
+	String atype;
+	int amt;
+	Bankcustomer()
+	{
+		acno=2050211;
+		atype="SBI";
+		amt=50000;
+	}
+       void show()
+       {
+    	   System.out.println(acno+" "+atype+" "+amt);
+       }
+       Bankcustomer(int x, String y, int z)
+       {
+    	   acno=x;
+    	   atype=y;
+    	   amt=z;
+       }
+	public static void main(String[] args) {
+		Bankcustomer b=new Bankcustomer();
+		b.show();
+
+	}
+
+}
