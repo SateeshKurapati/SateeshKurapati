@@ -1,0 +1,98 @@
+package sample;
+
+public class String1 {
+
+	public static void main(java.lang.String[] args) {
+		// TODO Auto-generated method stub
+           String s1="sateesh";
+           String s2="sandeep";
+           String s3="sai";
+           System.out.println(s1+" "+s2+" "+s3);
+           System.out.println(s1.concat("manoj"));
+           System.out.println(s1.charAt(0));
+           System.out.println(s1.substring(0,5));
+           System.out.println(s1.replace("sai", "ram"));
+           System.out.println(s1.indexOf("t"));
+           System.out.println(s1.startsWith("sateesh"));
+           System.out.println(s1.endsWith("sai"));
+           System.out.println(s1.equals(s2));
+	}
+
+}
+
+
+
+
+
+
+package sample;
+
+class StringBuffer1 {
+
+	public static void main(String[] args) {
+		StringBuffer s1= new StringBuffer("sateesh");
+		StringBuffer s2= new StringBuffer("sandeep");
+		StringBuffer s3= new StringBuffer("sateesh");
+		
+		System.out.println(s1+" "+s2+" "+s3);
+		System.out.println(s1==s3);
+		System.out.println(s1.equals(s3));
+		
+		System.out.println(s1.append("kumar"));
+		System.out.println(s1);
+		System.out.println(s1.insert(10, "sai"));
+		System.out.println(s1.delete(0, 10));
+		System.out.println(s1.reverse());
+		System.out.println(s1.length());
+
+		
+		
+		StringBuffer s4= new StringBuffer("sateesh");
+		StringBuffer s5= new StringBuffer("sandeep");
+		StringBuffer s6= new StringBuffer("sateesh");
+		
+		System.out.println(s4+" "+s5+" "+s6);
+		System.out.println(s4==s6);
+		System.out.println(s1.equals(s6));
+		
+		System.out.println(s4.append("kumar"));
+		System.out.println(s4);
+		System.out.println(s4.insert(10, "sai"));
+		System.out.println(s4.delete(0, 10));
+		System.out.println(s4.reverse());
+		System.out.println(s4.length());
+	}
+
+}
+
+
+
+
+
+
+package sample;
+class Doctor
+{
+	int sid;
+	String sname;
+	Doctor(int x, String y)
+	{
+		sid=x;
+		sname=y;
+	}
+	
+}
+
+public class Object {
+
+	public static void main(String[] args) {
+		Doctor d1=new Doctor(211, "sateesh");
+		Doctor d2=new Doctor(222, "kumar");
+		System.out.println(d1.equals(d2));
+		System.out.println(d1==d2);
+		System.out.println(d1.hashCode());
+		System.out.println(d1.toString());
+		System.out.println(d2.getClass());
+	}
+
+}
