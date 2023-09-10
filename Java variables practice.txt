@@ -1,0 +1,252 @@
+
+1.
+*Example of Class and Object
+
+package sample;
+class Student2
+{
+	int sid; // data members or instance variables
+	String sname;
+	void input(int x, String y) //methods
+	{
+		sid=x;
+		sname=y;
+	}
+	void output()
+	{
+		System.out.println(sid+" "+sname);
+	}
+}
+
+public class Objectdemo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student2 S1=new Student2(); // S1 is object
+		S1.input(10, "sateesh");
+		S1.output();
+
+	}
+
+
+2.
+*Static Variable or Class Variable
+
+package sample;
+class Employees
+{
+	static String cname="wipro"; //static variable
+}
+public class Staticdemo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(Employees.cname);
+
+	}
+
+}
+}
+
+
+
+3.
+package sample;
+class Book
+{
+	void show (int pages, String bname) //Local variable
+	{
+		System.out.println(pages+" "+bname);
+	}
+}
+
+public class Localdemo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+             Book b1=new Book();
+             b1.show(200, "java");
+	}
+
+}
+
+
+
+
+4.
+
+package sample;
+class student
+{
+	// data members
+	int sid;
+	String sname;
+	int marks;
+	void input(int x, String y, int z) //accept value
+	{
+		sid=x;
+		sname=y;
+		marks=z;
+	}
+	void output() //display values
+	{
+		System.out.println(sid+" "+sname+" "+marks);
+	}
+}
+      //methods
+public class Classdemo {
+
+	public static void main(String[] args) {
+	  student S1=new student(); //S1 is object
+	  S1.input(1, "xyz", 300);
+	  S1.output();
+	  student S2=new student();
+	  S2.input(2, "abc", 600);
+	  S2.output();
+      S1.sid=10;
+	}
+
+}
+
+
+
+5.
+
+package sample;
+import java.util.Scanner;
+
+class Student
+{
+	 // data members
+	int sid;
+	String sname;
+	int marks;
+	void input() //accept value
+	{
+		Scanner sc =new Scanner(System.in);
+		System.out.println("enter student details");
+		sid=sc.nextInt();
+		sname=sc.next();
+		marks=sc.nextInt();
+	}
+	  void output() // display values
+	  {
+		  System.out.println(sid+" "+sname+" "+marks);
+	  }
+}
+        //methods
+public class Classdemo1 {
+
+	public static void main(String[] args) {
+	   student s1=new student();
+	   s1.input();
+	   s1.output();
+	   student s2=new student();
+	   s2.input();
+	   s2.output();
+
+	} 
+
+}
+
+
+
+
+6.
+
+package sample;
+class Emps
+{
+	int eid;
+	String ename;
+	double sal;
+	Emps()
+	{
+		eid=1;
+		ename="xyz";
+		sal=15000;
+	}
+	void show()
+	{
+		System.out.println(eid+" "+ename+" "+sal);
+	}
+}
+
+public class Ctrodemo {
+
+	public static void main(String[] args) {
+		Emps e1=new Emps(); // e1 is object no param ctr
+		e1.show();
+	}
+}
+
+
+
+
+7.
+
+package sample;
+class Login
+{
+	String uname, pwd;
+	Login(String u, String p) //ctr with params
+	{
+		uname=u;
+		pwd=p;
+	}
+	void show()
+	{
+		System.out.println(uname+" "+pwd);
+	}
+}
+public class Ctrodemo2 {
+
+	public static void main(String[] args) {
+		Login l1=new Login("sateesh", "sateesh123");
+		l1.show();
+
+	}
+
+}
+
+
+
+
+
+8.
+
+package sample;
+class Teacher
+{
+	int tid;
+	String subject;
+	Teacher()
+	{
+		tid=1;
+		subject="computers";
+	}
+	Teacher (int x, String y)
+	{
+		tid=x;
+		subject=y;
+	}
+	void show() 
+	{
+		System.out.println(tid+" "+subject);
+	}
+}
+
+public class Ctrodemo3 {
+
+	public static void main(String[] args) {
+		Teacher t1=new Teacher(); //t1 is no param ctr
+		Teacher t2=new Teacher(); // t2 is with param ctr
+		t1.show();
+		t2.show();
+
+	}
+
+}
+
+
+

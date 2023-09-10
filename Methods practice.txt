@@ -1,0 +1,119 @@
+*Methods:-
+
+1.
+
+package sample;
+
+public class Method 
+{
+	void show()
+	{
+	  int x=10, y=5, z;
+	  z=x+y;
+	  System.out.println(z);
+}
+	public static void main(String[] args) {
+		// no return, no argument
+		{
+		  Method m=new Method();
+		  m.show();
+		}
+
+	}
+
+}
+
+
+
+2.
+
+package sample;
+
+import java.util.Scanner;
+
+public class Method2 {
+	void add(int x, int y) //x,y formal arguments
+	{
+		int z;
+		z=x+y;
+		System.out.println(z);
+	}
+
+	public static void main(String[] args) {
+		// no return, with arguments
+		{
+			Method2 m= new Method2();
+			m.add(10,20); //10,20 actual argument
+			m.add(20,40);
+			int a,b;
+			Scanner sc=new Scanner(System.in);
+			a=sc.nextInt();
+			b=sc.nextInt();
+			m.add(a,b);
+		}
+	}
+
+}
+
+
+
+3.
+
+package sample;
+
+public class Method3 {
+	String result(int x,int y,int z)
+	{
+		if(x>40 && y>40 && z>40)
+		{
+			return "pass";
+		}
+		else
+		{
+			return "fail";
+		}
+	}
+
+	public static void main(String[] args) {
+		// with return, with arguments
+			Method3 m= new Method3();
+			String r=m.result(45.67,89);
+			System.out.print(r);
+		}
+
+	}
+
+
+
+4.
+
+package sample;
+
+public class Allmethods {
+	void show()
+	{
+		System.out.println("***");
+	}
+	 void add (int x, int y)
+	 {
+		 int z;
+		 z= x+y;
+		 System.out.println(z);
+	 }
+	   int sub(int x, int y)
+	   {
+		   return x-y;
+	   }
+
+	public static void main(String[] args) {
+		// all methods
+		Allmethods a= new Allmethods();
+		a.show();
+		a.add(10,5);
+		int m=a.sub(10,5);
+		System.out.println(m);
+		a.show();
+
+	}
+
+}

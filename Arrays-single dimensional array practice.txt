@@ -1,0 +1,305 @@
+*Single Dimemsional Array
+
+1.
+package sample;
+
+public class Singledemensionalarray2 {
+
+	public static void main(String[] args) {
+		// demo single dimensional array2
+		int[]marks=new int[4];
+		marks[0]=30;
+		marks[1]=50;
+		marks[2]=20;
+		marks[3]=10;
+		for(int i:marks)
+		{
+			System.out.println(i+" ");
+		}
+
+	}
+
+}
+
+
+
+2.
+package sample;
+
+import java.util.Scanner;
+
+public class Singledimensionalarray3 {
+
+	public static void main(String[] args) {
+		// demo single dimensional array3
+		int[]marks=new int[4]; //Array declaration
+		Scanner sc=new Scanner(System.in); //input statement
+		System.out.println("enter marks");
+		for (int i=0; i<=3; i++)
+		{
+			marks[i]=sc.nextInt();
+		}
+          System.out.println("marks list");
+          for (int k:marks)
+         {
+        	System.out.println(k+" "); 
+         }
+	}
+
+}
+
+
+
+3.
+package sample;
+
+import java.util.Scanner;
+
+public class Singledimensionalarray4 {
+
+	public static void main(String[] args) {
+		// demo single dimensional array
+		int[]marks=new int[4]; //array declaration
+		int sum=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter marks");
+		for (int i=0; i<=3; i++)
+		{
+			marks[i]=sc.nextInt(); //marks[1]=11
+			sum=sum+marks[i]; //21
+		}
+           System.out.println("sum is" +sum);
+	}
+
+}
+
+
+
+
+4.
+package sample;
+
+import java.util.Scanner;
+
+public class Singledimensionalarray5 {
+
+	public static void main(String[] args) {
+		// demo single dimensional array5
+		int[] a=new int[5];
+		int big=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter array"); // 10 30 40 20
+		for (int i=0; i<=3; i++)
+		{
+			a[i]=sc.nextInt();
+			if (a[i]>big) //20>40
+			{
+				big=a[i]; // big=40
+			}
+		}
+            System.out.println("big is" +big);
+	}
+
+}
+
+
+
+
+5.
+package sample;
+
+import java.util.Scanner;
+
+public class Singledimensionalarray6 {
+
+	public static void main(String[] args) {
+		// demo single dimensional array6
+		int[]a=new int[5];
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter array"); //10 0 30 40
+		a[0]=sc.nextInt();
+		int small=a[0]; //20
+		for (int i=1; i<=3; i++)
+		{
+			a[i]=sc.nextInt();
+			if (a[i]<small); //40<10
+			{
+				small=a[i]=a[i]; //small=10
+			}
+		}
+           System.out.println("small is" +small);
+	}
+
+}
+
+
+
+6.
+package sample;
+
+import java.util.Scanner;
+
+public class Singledimensionalarray7 {
+
+	public static void main(String[] args) {
+		// demo single dimensional array7
+		int []a=new int [5];
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter array"); //10 20 30 40
+		for (int i=0; i<=3; i++)
+		{
+			a[i]=sc.nextInt();
+		}
+          System.out.println("reverse order");
+          for (int i=3; i>0; i--)
+          { 
+        	 System.out.println(a[i]+" ");
+          }
+	}
+
+}
+
+
+
+
+*Array Addition:-
+
+package sample;
+
+import java.util.Scanner;
+
+public class Arrayaddition {
+
+	public static void main(String[] args) {
+		// Array addition
+		//[1 2 3 4]+[2 3 4 5 ]=[3 5 7 9]
+		int[] a=new int[4];
+		int[] b=new int[4];
+		int[] c=new int[4];
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter array1");
+		for (int i=0; i<=3; i++)
+		{
+			a[i]=sc.nextInt();
+		}
+          System.out.println("enter array");
+          for (int i=0; i<=3; i++)
+          {
+        	  b[i]=sc.nextInt();
+          }
+          System.out.println("result array");
+          for(int i=0; i<-3; i++)
+          {
+        	  c[i]=a[i]+b[i];
+        	  System.out.println(c[i]+" ");
+          }
+	}
+
+}
+
+
+*Copied Array
+
+package sample;
+
+public class CopiedArray {
+
+	public static void main(String[] args) {
+		// wrp to demo copied Array
+		int[]x=new int[5];
+		int[]y=new int[5];
+		x[0]=10;
+		x[1]=11;
+		x[2]=12;
+		x[3]=13;
+		x[4]=14;
+		System.out.println("copiedarray");
+		for (int i=0; i<-4; i++)
+		{
+			y[i]=x[i];
+			System.out.println(y[i]+" ");
+		}
+		}
+		
+
+	}
+
+
+
+*Key Array-searching
+
+package sample;
+
+import java.util.Scanner;
+
+public class KeyArray {
+
+	public static void main(String[] args) {
+		// wrp to demo key
+		int[] a=new int[4];
+		int key;
+		boolean flag=false;
+		System.out.println("enter array");
+		Scanner sc=new Scanner(System.in);
+		for(int i=0; i<=3; i++)
+		{
+			a[i]=sc.nextInt(); // 10 11 12 13
+		}
+           System.out.println("enter key");
+           key=sc.nextInt(); //15
+           for (int i=0; i<=3; i++)
+           {
+        	   if (key==a[i]) //15==13
+        	   {
+        		   flag=true;
+        		   break;
+        	   }
+           }
+           if (flag==true)
+        	  System.out.println("key is found");
+           else
+        	   System.out.println("key is not found");
+	}
+
+}
+
+
+
+*Sort the Elements
+
+package sample;
+
+import java.util.Scanner;
+
+public class Sortelements {
+
+	public static void main(String[] args) {
+		// sort the elements
+		//10 11 12 13 14 15
+		int[] a=new int[6];
+		Scanner sc=new Scanner(System.in);
+		for (int i=0; i<=5; i++)
+			{
+				a[i]=sc.nextInt();
+			}
+          for (int i=0; i<=5; i++) //1<5
+          for (int j=i+1; j<=5; j++) //2<5
+          if (a[i]<a[j]) //11>10
+          {
+        	  int temp;
+        	  temp=a[i]; //temp=15
+        	  a[i]=a[j]; //a[0]=11
+        	  a[j]=temp; //a[1]=15
+          }
+          System.out.println("sorted list..");
+          for (int k:a)
+          {
+	           System.out.println(k+" ");
+
+	}
+  }
+}
+
+
+
+

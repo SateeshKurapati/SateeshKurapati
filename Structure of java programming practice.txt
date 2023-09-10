@@ -1,0 +1,103 @@
+package sample;
+
+public class Multiple {
+
+	public static void main(String[] args) {
+		// multiple assignment +=,-=,*=,/=,%=
+		int x;
+		x=10;
+		x+=3;//x=x+3
+		x-=2;//x=x-2
+		x*=4;//x=x*4
+		x/=11;//x=x/11
+		x%=2;//x=x%2
+		System.out.println("final x value "+x);
+
+	}
+
+}
+
+
+
+package sample;
+
+public class Integer {
+
+	public static void main(String[] args) {
+		// Integers
+		byte x; // 8 bites -128 to +127
+		x=120;
+		short y; // 16 bites -32768 to +32767
+		y=32000;
+		int z; // 32 bites 
+		z=100000;
+		long m; // 64 bits
+		m=523568356;
+		System.out.println(x+" "+y+" "+z+" "+m);
+
+	}
+
+}
+
+
+
+
+package sample;
+
+public class Float {
+
+	public static void main(String[] args) {
+		// float double
+		float x; // 4 bytes .0000000
+		double y; // 8 bytes .0000000
+		x=12.3f;
+		y=45;
+		System.out.println(x+" "+y);
+
+	}
+
+}
+
+
+
+
+package sample;
+
+public class Decimal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub %d %o %x
+		int x=10; // decimal int
+		          // octal int
+		          // ox hexadecimal 16
+		          // ob binary 2
+		System.out.println(x);
+
+	}
+
+}
+
+
+
+
+package sample;
+
+public class Charater {
+
+	public static void main(String[] args) {
+		// Character data type string
+		char grade;
+		grade='A'; // 65 2bytes
+		String Sname;
+		Sname="surya";
+		System.out.println(grade+" "+Sname);
+
+	}
+
+}
+
+
+
+
+
+

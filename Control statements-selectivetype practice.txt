@@ -1,0 +1,232 @@
+*if..else:-
+
+1.
+package sample;
+
+import java.util.Scanner;
+
+public class Ifelse {
+
+	public static void main(String[] args) {
+		// wrp to demo if..else
+		int n;
+		System.out.println("enter n");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		if(n%2==0)
+		{
+			System.out.println("even number");
+		}
+		else
+		{
+			System.out.println("odd number");
+	    }
+	}
+}
+
+
+
+2.
+package sample;
+
+import java.util.Scanner;
+
+public class Ifelsedemo {
+
+	public static void main(String[] args) {
+		// wrp to demo if..else
+		int n;
+		System.out.println("enter n");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		String str=(n%2==0)?"Even":"Odd";
+		System.out.println("number is" +str);
+
+	}
+
+}
+
+
+
+*if..else..if:-
+
+package sample;
+
+import java.util.Scanner;
+
+public class Ifelseif {
+
+	public static void main(String[] args) {
+		// wrp to demo if..else..if
+		int x,y,z;
+		System.out.println("enter x,y,z");
+		Scanner sc=new Scanner(System.in);
+		x=sc.nextInt();
+		y=sc.nextInt();
+		z=sc.nextInt();
+		if(x>y&&x>z)
+		{
+			System.out.println(x+" is big");
+		}
+		else if(y>x && y>z);	
+
+	}
+
+}
+
+
+
+*Nested..if:-
+
+1.
+package sample;
+
+import java.util.Scanner;
+
+public class Nestedif {
+
+	public static void main(String[] args) {
+		// wrp to demo nested..if
+		int n;
+		System.out.println("enter n");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();//198
+		if(n<=100)
+		{
+			System.out.println("it is below 100");
+		if(n<=95)
+		{
+		    System.out.println("it is below 95");
+			}
+		else	
+		{
+			System.out.println("it is above 95");
+		}
+		}
+		else
+		{
+			System.out.println("it is above 100");
+		}
+	}
+
+}
+
+
+
+2.
+package sample;
+
+import java.util.Scanner;
+
+public class Nestedif2 {
+
+	public static void main(String[] args) {
+		// wrp to demo nested..if
+		int m1,m2,m3;
+		double avg;
+		System.out.println("enter marks");
+		Scanner sc=new Scanner(System.in);
+		m1=sc.nextInt();
+		m2=sc.nextInt();
+		m3=sc.nextInt();
+		avg=(m1+m2+m3)/3;
+		if (m1>=40 && m2>=40 && m3>=40);
+		{
+			System.out.println("result is pass");
+			if (avg>=70)
+		{
+		    System.out.println("A grade");
+		}
+			else if (avg>=60)
+		{
+		    System.out.println("B grade");		
+			}
+			else if (avg>=50)
+			{
+			System.out.println("C grade");
+			}
+			else
+			{
+			System.out.println("result is fail");
+			}
+		}
+
+	}
+
+}
+
+
+
+3.
+package sample;
+
+import java.util.Scanner;
+
+public class Nestedif3 {
+
+	public static void main(String[] args) {
+		// wrp to demo nested..if
+		String Rtype;
+		int nod,rent,bill;
+		System.out.println("enter Rtype");
+		System.out.println("enter nod");
+		Scanner sc=new Scanner(System.in);
+		Rtype=sc.next();
+		nod=sc.nextInt();
+		rent=sc.nextInt();
+		bill=sc.nextInt();
+		if(Rtype=="A")
+		{
+			rent=2000;
+		}
+		else if(Rtype=="D")
+		{
+			rent=1500;
+		}
+		else if(Rtype=="L")
+		{
+			rent=1200;
+		}
+		else
+		{
+			rent=500;
+		}
+		bill=rent*nod;
+		System.out.println("bill");
+	}
+
+}
+
+
+
+*Switch case:-
+
+package sample;
+
+public class Switchase {
+
+	public static void main(String[] args) {
+		// wrp to demo switch..case
+		int n=4;
+		switch (n)
+		{
+		case 1:
+			System.out.println("ONE");
+			break;
+		case 2:
+			System.out.println("TWO");
+			break;
+			
+		case 3:
+			System.out.println("THREE");
+			break;
+		case 4:
+			System.out.println("FOUR");
+			break;
+		default:
+			System.out.println("default case");
+			
+		}
+	}
+
+}

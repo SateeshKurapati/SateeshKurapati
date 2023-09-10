@@ -1,0 +1,152 @@
+
+// Arthematic operator:-
+
+package sample;
+
+public class Arthematic {
+
+	public static void main(String[] args) {
+		int x,y,z,m,n,p,q; // arithmetic operators +,-,*,/,%
+          x=10;
+          y=5;
+          z=x+y;
+          m=x-y;
+          n=x*y;
+          p=x/y;
+          q=x%y;
+          System.out.println(z+" "+m+" "+n+" "+p+" "+q);
+		
+	}
+
+}
+
+
+
+//Assignment operator:-
+
+package sample;
+
+public class Assignment {
+
+	public static void main(String[] args) {
+               //-=,*=,%=
+		int h,i,j,k,l,m;
+		h=30;
+		i=h+=2;
+		j=h-=4;
+		k=h*=6;
+		l=h/=8;
+		m=h%=10;
+		System.out.println(i+" "+j+" "+k+" "+l+" "+m);
+
+
+
+//Relational operator:-
+
+package sample;
+
+public class Relational {
+
+	public static void main(String[] args) {
+		// relational >,<,>=,<=,==,!=
+		int x,y,z;
+		x=10;
+		y=5;
+		z=10;
+		System.out.println(x>y);
+		System.out.println(x<y);
+		System.out.println(x==y);
+		System.out.println(x==z);
+		System.out.println(x!=y);
+		System.out.println(x>=y);
+
+	}
+
+}
+
+
+
+//Logical Operator:-
+
+package sample;
+
+public class Logical {
+
+	public static void main(String[] args) {
+		//Logical operators and(&&), or(||),not(!)
+			int aa,bb;
+			aa=50;
+			bb=25;
+			boolean result=(aa>=bb) && (bb>=aa);
+			System.out.println("Result:" +result);
+		}
+	}
+
+
+
+
+//Ternary Operator:-
+
+package sample;
+
+public class Ternary {
+
+	public static void main(String[] args) {
+		// Ternary ?,;
+		// (con)? st=1:st=2;
+		int m1,m2,m3;
+		String result;
+		m1=45;
+		m2=55;
+		m3=75;
+		result=(m1>40 && m2>40 && m3>40)?"pass":"fail";
+		System.out.println("result is" +result);
+		
+
+	}
+
+}
+
+
+
+//Unary operator:-
+
+package sample;
+
+public class Unary {
+
+	public static void main(String[] args) {
+		// unary operators ++,--
+		int a=5,b,c;
+		b=++a;//1+5 a=6,b=6
+		c=a++ + ++b;// c=13,a=7,b=7
+		System.out.println(a+" "+b+" "+c);
+		
+
+	}
+
+}
+
+
+
+ 
+//Bitwise operator:-
+
+package sample;
+
+public class Bitwise {
+
+	public static void main(String[] args) {
+		// and(&), or(/), xor(^), left(<<), right(>>)
+		int x=10,y=3;
+		System.out.println(x&y);//1010&0011=0010(2)
+		System.out.println(x/y);//1010/0011=1011(11)
+		System.out.println(x^y);//1010^0011=1001(9)
+		System.out.println(x<<y);//1010000(64+10)=80
+		System.out.println(x>>y);//1=1
+
+	}
+
+}
+
+

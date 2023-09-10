@@ -1,0 +1,300 @@
+*While:-
+
+1.
+package sample;
+
+import java.util.Scanner;
+
+public class While {
+
+	public static void main(String[] args) {
+		// demo while
+		   int n,i;
+		   i=1;
+		   System.out.println("enter n");
+		   Scanner sc=new Scanner(System.in);
+		   n=sc.nextInt();
+		   while (i<=10)
+		   {
+			   System.out.println(n+"*" +i+ "=" +(n*1));
+			   i++;
+		   }	
+	}
+
+}
+
+
+
+2.
+package sample;
+
+import java.util.Scanner;
+
+public class While3 {
+
+	public static void main(String[] args) {
+		// wrp to demo factorial of given number
+		//enter 55!=5*4*3*2*1=120
+		int n,f=1;
+		System.out.println("enter n");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		while(n>0) //5>0
+		{
+			f=f*n; //120
+			n--; //n=0
+		}
+          System.out.println(f);
+	}
+
+}
+
+
+*do...while
+
+1.
+package sample;
+
+import java.util.Scanner;
+
+public class Dowhile {
+
+	public static void main(String[] args) {
+		// wrp to check number is prime
+		int n,i=1,cnt=0;
+		System.out.println("enter n");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt(); //4
+		do
+		{
+			if (n%i==0) //3%3==0
+			{
+				cnt++; // cnt=2
+			}
+			 i++; //i=4
+		}
+		  while(i<=n); //4<=3
+		  if (cnt==2)
+		 System.out.println("prime number");
+		  else
+			System.out.println("not prime");
+
+	}
+
+}
+
+
+2.
+package sample;
+
+import java.util.Scanner;
+
+public class Dowhile2 {
+
+	public static void main(String[] args) {
+		// wrp to check given number is palindrome or not
+		int n, rev=0,r,m;
+		System.out.println("enter n");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt(); //121
+		m=n; //121
+		
+		do
+		{
+			r=n%10; //1%10(1)
+			rev=(rev*10)+r; //121
+			n=n/10; //1/10(n=0)
+		}
+		  while(n>0); //0>0
+		if(m==rev) //121==121
+			System.out.println("palindrome");
+		else
+			System.out.println("not palindrome");
+
+	}
+
+}
+
+
+
+3.
+package sample;
+
+import java.util.Scanner;
+
+public class Dowhile3 {
+
+	public static void main(String[] args) {
+		// wrp to check armstrong number
+		int n,sum=0,r,m;
+		System.out.println("enter n");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt(); //153
+		m=n; //153
+		
+		do
+		{
+			r=n%10; //1%10(1)
+			sum=sum+(r*r*r);
+			n=n/10; //1/10 (n=0)
+		}
+          while(n>0); //0>0
+		if (m==sum) //153==153
+			System.out.println("armstrong");
+		else
+			System.out.println("not armstrong");
+	}
+
+}
+
+
+
+*for...looop
+
+1.
+package sample;
+
+public class Forloop {
+
+	public static void main(String[] args) {
+		// wrp to demo for..loop
+		  for(int i=1; i<10; i++)
+		  {
+			  System.out.println(i);
+		  }
+
+	}
+
+}
+
+
+
+2.
+package sample;
+
+public class Forloop2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for (int i=1, j=3; i<=2 || j>=1;i++,j--)
+		   {
+			System.out.println(i+" "+j); //1 3 2 2 3 1
+		   }
+
+	}
+
+}
+
+
+
+*nested...for
+
+1.
+package sample;
+
+public class Nestedfor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for (int i=1; i<=4; i++)
+		{
+			for (int j=1; j<=i; j++)
+			{
+				System.out.println(j+" "); //1
+				                           //12
+			}                              //123
+			System.out.println();          //1234
+		}
+
+	}
+
+}
+
+
+2.
+package sample;
+
+public class Nestedfor2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for(int i=4; i>1; i--)
+		{
+			for (int j=1; j<=4; j++)
+			{
+				System.out.println(i); //4444
+				                       //3333
+			}                          //2222
+			System.out.println();      //1111
+		}
+
+	}
+
+}
+
+
+
+*for each loop
+
+1.
+package sample;
+
+public class Foreachloop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[]x= {10,20,30,40};
+		for (int i:x)
+		{ 
+		   System.out.println(i);
+		}
+
+	}
+
+}
+
+
+
+*break
+
+package sample;
+
+public class Break {
+
+	public static void main(String[] args) {
+		// wrp to demo break
+		for (int i=1; i<10; i++)
+		{
+		  if(i==6)
+		  {
+			  break;
+		  }
+		  System.out.println(i);
+		}
+
+	}
+
+}
+
+
+
+*continue
+
+package sample;
+
+public class Continue {
+
+	public static void main(String[] args) {
+		// wrp to demo continue
+		for(int i=1;i<=10;i++)
+		{
+		  if(i==6)
+		{
+		  continue;
+		}
+		  System.out.println(i);	
+		}
+
+	}
+
+}
