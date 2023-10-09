@@ -1,0 +1,101 @@
+1.
+
+package sample;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+class Emp8
+{
+	int eid;
+	String ename;
+	int sal;
+
+   Emp8(int eid, String ename, int sal)
+   {
+	   this.eid=eid;
+	   this.ename=ename;
+	   this.sal=sal;
+   }
+public class Arraylist {
+
+	public static void main(String[] args) {
+		Emp8 e1=new Emp8(100,"sateesh",20000);
+		Emp8 e2=new Emp8(101,"raghu",40000);
+        Emp8 e3=new Emp8(102,"navya",10000);
+        ArrayList<Emp8>al=new ArrayList<Emp8>();
+        al.add(e1);
+        al.add(e2);
+        al.add(e3);
+        Iterator itr=al.iterator();
+        while(itr.hasNext());
+        Emp8 e=(Emp8)itr.next();
+        System.out.println(e.eid+" "+e.ename+" "+e.sal);
+	}
+
+}
+}
+
+
+
+2.
+ 
+package sample;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class Hashmap {
+
+	public static void main(String[] args) {
+	Hashmap<Integer,String> map=new Hashmap<Integer,String>();
+	map.put(1,"sateesh");
+	map.put(2,"vishnu");
+	System.out.println("Iterating Hashmap");
+    for(Map.Entry m:map.entrySet())
+    		{
+    	System.out.println(m.getKey()+" "+m.getValue());
+    	LinkedHashMap<Integer, String> map1=new LinkedHashMap<Integer, String>();
+    	map1.put(5, "FIVE");
+    	map1.put(6, "SIX");
+    	map1.put(7, "SEVEN");
+    	System.out.println("Keys:"+map1.keySet());
+    	System.out.println("Values:"+map.values());
+    	System.out.println("Key-Value pairs: "+map1.entrySet());
+    		}
+	}
+
+}
+
+
+3.
+
+package sample;
+class invalidPassException extends Exception {
+	public invalidPassException(String s)
+	{
+		super(s);
+	}
+}
+public class Userdefinedexception {
+    static void validate(int pass) throws invalidPassException
+    {
+    	System.out.println("Mobile lock password");
+    	if(pass<7116)
+    		throw new invalidPassException("Not valid");
+    	else
+    		System.out.println("valid");
+    }
+	public static void main(String[] args) {
+		try
+		{
+			validate(7117);
+		}
+           catch(Exception m)
+		{
+        	   System.out.println("Exception error:"+m);
+		}
+		   System.out.println("Mobile lock Opened");
+	}
+
+}
