@@ -1,0 +1,271 @@
+1.
+
+<html>
+    <head>
+        <title> full stack</title>
+    </head>
+    <body>
+        <table border="1">
+        <tr>
+            <td colspan="4"> Full stack Java Development</td>
+        </tr>
+        <tr>
+            <td>weeks</td>
+            <td>module</td>
+            <td>hours</td>
+            <td rowspan="8"> Each module case studies, assignments.</td>
+
+        </tr>
+        <tr>
+            <td>2 weeks</td>
+            <td>core java</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>1 week</td>
+            <td>Oracle sql</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td> 1 week</td>
+            <td> JDBC</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td> 2 weeks </td>
+            <td>WeB Ui</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td> 1 week</td>
+            <td> Servlets</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td> 1 week</td>
+            <td> JSP</td>
+            <td>25</td>
+        </tr>
+    
+        </table>
+    </body>
+</html>
+
+
+
+
+1.
+
+<html>
+    <head>
+        <title> Mahatma gandhi</title>
+    </head>
+    <body>
+        <h1> Mohandas Karamchand Gandhi</h1>
+        <img src="transparent-mahatma-gandhi-5f89b3d08970e0.973854941602859984563.jpg" width="250" height="250">
+
+        <p>
+            Mohandas Karamchand Gandhhi was an indian lawyer and anti-clonial nationalist who employed non-voilent resistance in the campaign for india's independence from British rule.
+
+        </p>
+        <p>
+            Born in 1869 in Gujarat, india. Gandhi studied law at the inner Temple in London. After unsucessfully attempting to practise in India, he moved to south Africa in 1893, where he stayed for 21 years. It was in south africa that Gandhi first used tactics of non-voilent resistance to campaign for civil rights. This activism gained Gandhi the title Mahatma, meaning 'great soul.
+            '
+        </p>
+        <strong>Gandhi's Quatation:-</strong>
+        <em>
+            " The future depends on what we do in the present."
+        </em>
+
+       
+
+
+2.
+
+<html>
+    <head>
+        <title>table</title>
+    </head>
+    <body>
+        <table border="1"> 
+        <tr>
+        <th> S.No</th>
+        <th> Qualification</th>
+        <th> Year of passedout</th>
+        <th> School/College Name</th>
+        <th> Percentage</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>10th</td>
+            <td>2017</td>
+            <td>Srivani vidhyanikethan high school</td>
+            <td>9.0 </td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Diploma</td>
+            <td>2020</td>
+            <td>SLC's institute of Engineering & Technology</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>B.tech</td>
+            <td>2023</td>
+            <td>Khammam institute of Technology and Sciences</td>
+            <td>7.2 </td>
+        </tr>
+        </table>
+    </body>
+</html>
+
+
+
+
+3.
+
+<html>
+    <head>
+        <title> form</title>
+    </head>
+    <body>
+        <h1> APPLICATION FORM</h1>
+        First Name: <input type="text" placeholder="First Name"name="first name"> <br>
+        Last Name: <input type="text" Placeholder="Last Name"name="last name" > <br>
+        Gender: <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female <br>
+        Date of Birth:<input type="text"><br>
+        Status:<br>
+        <input type="checkbox" name="license">Single
+        <input type="checkbox" name="license">Married
+        <input type="checkbox" name="licence">Divorced<br>
+        Physically handicapped:<br>
+        <input type="radio" name="physically">yes
+        <input type="radio" name="physically">no<br>
+        Mobile No<input type="text"><br>
+        Address:<br>
+        country:
+        <select name="country">
+            <option> Please select</option>
+            <option> India</option>
+            <option> Uk</option>
+            <option> USA</option>
+        </select>
+        State:
+        <select name="State">
+        <option> Please select</option>
+        <option> Telangana</option>
+        <option> Temilnadu</option>
+        <option> Karnataka</option>
+    </select>
+        District:
+        <select name="District">
+        <option> Please select</option>
+            <option> Khammam</option>
+            <option> Warangal</option>
+            <option> Mahububabad</option>
+        </select>
+            <br>
+            <input type="submit"
+        <
+
+    </body>
+</html>
+
+
+
+
+
+4.
+
+<html>
+    <head>
+        <title> embed video</title>
+    </head>
+    <head>
+        <iframe src="https://youtu.be/yr7JFNsz5dU?si=9ALUuC7jg7tnEDIW" width="400px" height="300px"></iframe>
+    </head>
+</html>
+
+
+
+
+
+5.
+
+<html>
+    <head>
+        <title> Text formatting tags</title>
+    </head>
+    <body>
+        <b> <u>Mother Teresa:</u></b><br>
+        Mother Teresa is humanitarian who is well known throughout the world for her selfless approach toward those who are in need.
+        <p>
+        <em>Quatation:-</em>
+        <i>"Peace begins with a smile."</i><br>
+        </p>
+      <p>
+        <strike>what is 10 with the power of 2?</strike><br>
+       Ans:-10<sup>2</sup>=100
+      </p>
+      <p>
+        <strong> write the chemical formula for glucose </strong><br>
+        Ans:-The chemical formula for glucose is C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>
+      </p>
+        
+
+    </body>
+</html>
+
+
+
+
+6.
+
+<html>
+    <head>
+        <title> List tags</title>
+    </head>
+    <body>
+        <h1> promises of Sai Baba:-</h1>
+        <ul>
+            <li> I shall be active and vigorous even from my tomb</li>
+            <li> My tomb shall bless and speak to the needs of the devotees</li>
+            <li> The wretched and the miserable would rise to plenty of joy and hapiness</li>
+            <li> I shall be active and vigorous even after leaving this earthly body</li>
+            <li> My mortal ramains would speak from the tomb</li>
+        </ul>
+        <br>
+        <h1>Facts of Shiva:-</h1>
+        <ol>
+            <li>The very name of shiva is a blessing..</li>
+            <li>shiva is not a tamasic god but a purifier</li>
+            <li>shiva is both an ascetic and a householder</li>
+            <li>Shiva personifies the diversity and dualities of creation</li>
+            <li>shiva is a unique god with many distinctions</li>
+        </ol>
+        <br>
+        <dl>
+            <dt>Krishna</dt>
+            <dd>Krishna is the Hindu god of compassion,protection, and love.</dd>
+        </dl>
+    </body>
+</html>
+
+
+
+
+
+7.
+
+<html>
+    <head>
+        <title> hyperlinks</title>
+    </head>
+    <body>
+        <h1> Sri chaitanya institute of technology and research</h1><br>
+        <a href="https://scitr.edu.in/">SCIT</a>
+    </body>
+</html>
+
