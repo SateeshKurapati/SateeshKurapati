@@ -1,0 +1,151 @@
+1.
+
+html>
+    <head>
+        <title>Text, Font, Background, Color Properties</title>
+        <style type="text/css">
+            #p1
+            {
+                font-family: 'Times New Roman';
+                font-size: 30px;
+                font-weight: normal;
+                font-style: normal;
+
+                letter-spacing: normal;
+                word-spacing: 2px;
+                line-height: 40px;
+                text-decoration: underline;
+                text-transform: lowercase;
+                text-align: center;
+                text-indent: 10px;
+
+                color:yellow;
+                background-color:rgb(230, 42, 42);
+
+                background-image:url('pink-flowers-pictures-wallpaper-download-beautiful-pink-flowers-pictures-wallpaper-preview.png');
+                background-repeat: repeat-y;
+                background-position: bottom center;
+                background-attachment: fixed;
+            }
+            #p2
+            {
+                font-family: 'Consolas';
+                font-size: 25px;
+                font-weight: normal;
+                font-style: italic;
+
+                letter-spacing: 1px;
+                word-spacing: normal;
+                line-height: 35px;
+                text-decoration: overline;
+                text-transform: none;
+                text-align: left;
+                text-indent: 20px;
+
+                color:white;
+                background-color:maroon;
+
+                background-image: url('environment-earth-day-hands-trees.png');
+                background-repeat: no-repeat;
+                background-position: top left;
+                background-attachment: scroll;
+
+            }
+            #p3
+            {
+                font-family: 'Comic Sans Ms';
+                font-size: 20px;
+                font-weight: bold;
+                font-style: normal;
+
+                letter-spacing: 2px;
+                word-spacing: 1px;
+                line-height: 30px;
+                text-decoration: line-through;
+                text-transform: uppercase;
+                text-align: right;
+                text-indent: 30px;
+
+                color:blue;
+                background-color:#6fdca3;
+
+                background-image: url('photo-1593132808462-578ca7a387d9.png');
+                background-repeat: repeat-x;
+                background-position: center right;
+                background-attachment: fixed;
+            }
+        </style>
+
+        
+    </head>
+    <body>
+        <p id="p1"> I have completed my 10th standard in srivani vidhyanikethan high school with 9.0 GPA.</p>
+        <p id="p2"> I have completed my diploma in SLC's institute of engineering and technology.</p>
+        <p id="p3"> I have completed my B.tech in khammam institute of technology and sciences.</p>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+2.
+
+<html>
+    <head>
+        <title> Box model</title>
+        <style type="text/css">
+            #div1
+            {
+                background-color:green;
+                width:300px;
+                height:60px;
+                float:left;
+                border-style:solid;
+                border-width:5px;
+                border-color:yellow;
+                margin: 10px 20px 20px 5px;
+                padding:10px 5px 15px 30px;
+            }
+            #div2
+            {
+                background-color:brown;
+                width:300px;
+                height:60px;
+                float:left;
+                border-style:dotted;
+                border-width:5px;
+                border-color:black;
+                margin:10px 20px 20px 5px;
+                padding:10px 5px 15px 30px;
+            }
+            #div3
+            {
+                background-color:lightcoral;
+                width:300px;
+                height:60px;
+                float:left; 
+                border-style:dashed;
+                border-width:5px;
+                border-color:blueviolet;
+                margin:10px 20px 20px 5px;
+                padding:10px 5px 15px 30px
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            My name kurapati sateesh kumar. I am from khammam. present i am learning java full stack course in prime pro learning.
+        </div>
+        <div id="div2">
+            In backend we have corejava, spring boot, hybernet, jdbc, datbase mysql.
+        </div>
+        <div id="div3">
+            In frondedn we have html, css, angular, javascript.
+        </div>
+    </body>
+</html>
