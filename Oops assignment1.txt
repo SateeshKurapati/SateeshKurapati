@@ -1,0 +1,122 @@
+package sample;
+1.
+
+class Library
+{
+	int bcode;
+	String bname;
+	String btype;
+	Library()
+	{
+		bcode=123;
+		bname="java";
+		btype="code";
+	}
+	void display()
+	{
+	System.out.println(bcode+" "+bname+" "+btype);
+}
+}
+
+public class Oop1 {
+
+	public static void main(String[] args) {
+		Library lr= new Library();
+		lr.display();
+	}
+}
+
+
+
+2.
+
+package sample;
+class Movie
+{
+	int movieid;
+	String moviename;
+	int moviereleaseyear;
+		Movie(int movieid, String moviename, int moviereleaseyear)
+		{
+			this.movieid=movieid;
+			this.moviename=moviename;
+			this.moviereleaseyear=moviereleaseyear;
+	}
+}
+		class Telugu extends Movie
+		{
+		   
+		    Telugu(int movieid, String moviename, int moviereleaseyear)
+		    {
+		      super(movieid, moviename, moviereleaseyear);
+		    }
+		
+		    void display()
+		    {
+		    	System.out.println(movieid+" "+moviename+" "+moviereleaseyear);
+			}
+		    }
+		    class Hindi extends Movie
+		    {
+		    	Hindi(int movieid, String moviename, int moviereleaseyear)
+		    	{
+		    		super(movieid, moviename, moviereleaseyear);
+		    	}
+		    
+		      
+		void display()
+		{
+			System.out.println(movieid+" "+moviename+" "+moviereleaseyear);
+		}
+}
+
+
+
+public class Oop2 {
+
+	public static void main(String[] args) {
+		Telugu tu= new Telugu(100, "Darling", 2007);
+		Hindi hn= new Hindi(101, "chennai Express", 2010);
+		tu.display();
+		hn.display();
+				
+	}
+}
+
+
+
+3.
+
+package sample;
+
+public class Oop3 {
+	static void swap(int a, int b)
+	{
+		int t;
+		t=a;
+	    a=b;
+	    b=t;
+	    {
+	    	System.out.println(a+" "+b);
+	    }
+	    
+	}
+	static void swap(double a, double b)
+	{
+		double t;
+		t=a;
+		a=b;
+		b=t;
+		{
+			System.out.println(a+" "+b);
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		swap(10,20);
+		swap(20,40);
+
+	}
+
+}
