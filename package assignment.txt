@@ -1,0 +1,61 @@
+package admin;
+    
+public class Faculty {
+      public void raju() {
+    	  System.out.println("Raju is maths sir");
+      }
+}
+
+
+package admin;
+
+public class Staff {
+	public void attendor() {
+		System.out.println("he is not got salary");
+	}
+
+}
+
+
+package students;
+
+public class Course {
+	public void java() {
+		System.out.println("java full stack");
+	}
+
+}
+
+
+package students;
+
+public class Exam {
+	public void interview() {
+		System.out.println("i was selected");
+	}
+
+}
+
+
+package college;
+
+import admin.Faculty;
+import admin.Staff;
+import students.Course;
+import students.Exam;
+
+public class App {
+
+	public static void main(String[] args) {
+		Faculty f= new Faculty();
+		f.raju();
+		Staff s= new Staff();
+		s.attendor();
+		Course c= new Course();
+		c.java();
+		Exam e= new Exam();
+		e.interview();
+
+	}
+
+}
