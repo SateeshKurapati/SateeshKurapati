@@ -1,0 +1,74 @@
+1.
+
+package sample;
+abstract class College
+{
+	abstract void coursename();
+	
+	void collegename(){
+		System.out.println("kits college");
+	}
+}
+class Arts extends College
+{
+	void coursename(){
+		System.out.println("Java full stack");
+	}
+}
+class Science extends College
+{
+	void coursename() {
+		System.out.println("Database");
+	}
+}
+
+public class Abstractclass {
+
+	public static void main(String[] args) {
+		Arts a= new Arts();
+		a.coursename();
+		Science s= new Science();
+		s.coursename();
+
+	}
+
+}
+
+
+2.
+
+package sample;
+interface User{
+	void sateesh();
+	void Raghu();
+}
+interface Rooms{
+	void nonac();
+	void ac();
+}
+class Hostel implements User,Rooms
+{
+	public void sateesh() {
+		System.out.println("Sateesh is a good boy");}
+    public void Raghu() {
+    	System.out.println("Raghu is smart boy"); }
+    public void nonac() {
+    	System.out.println("Ac rooms are costly");}
+    public void ac() {
+    	System.out.println("Nonac rooms are lowcost");}
+    
+	}
+
+public class Interfaceclass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Hostel h= new Hostel();
+		h.sateesh();
+		h.Raghu();
+		h.nonac();
+		h.ac();
+          
+	}
+
+}
